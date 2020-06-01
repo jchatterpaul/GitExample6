@@ -1,7 +1,7 @@
 from lxml import etree as ET
 
 # get the xml file data
-stream = open('xml.xml','r')
+stream = open('sample.xml','r')
 
 # parse the data into an ElementTree object
 xml = ET.parse(stream)
