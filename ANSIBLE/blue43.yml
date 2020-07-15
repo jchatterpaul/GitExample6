@@ -1,0 +1,12 @@
+---
+- name: Ping
+  hosts: routers
+  tasks:
+    - name: Ping 10.10.20.48
+      ios_ping:
+        dest: 10.10.20.48
+        count: 20
+      register: pingresults
+
+    - name: Print results
+      debug: msg="{{pingresults}}"
